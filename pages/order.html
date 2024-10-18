@@ -3,8 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <title>Order Page</title>
+    <link rel="stylesheet" href="/styles/stylesOrders.css">
+    <link rel="stylesheet" href="/mediaqueries/orderMediaqueries.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+<section id="order">
+    <div class="order-upper">
+        <div class="select-cus">
+            <div class="select-cus-topic">
+                <h3>Select Customer</h3>
+            </div>
+            <div class="select-cus-form">
+                <label for="cus-id">Customer ID</label>
+                <select id="cus-id" name="select-customer-id" ></select>
+            </div>
+            <div class="cus-details">
+                <label>Hirusha</label>
+                <label>0729625501</label>
+            </div>
+        </div>
 
+        <div class="order-details">
+            <div class="odr-detail-topic">
+                <label class="ot">Order Details</label>
+                <label class="od">2.48 PM 10/18/2024</label>
+            </div>
+
+            <div class="set-order-id">
+                <label for="order-id">Order Id</label>
+                <input type="text" id="order-id" name="orderId" placeholder="Enter orderId">
+            </div>
+        </div>
+    </div>
+
+    <div class="order-lower">
+        <div class="add-new-item">
+            <div class="ani-topic">
+                <h3>Add item to cart</h3>
+            </div>
+
+            <form class="ani-form">
+                <div class="ani-form-inside">
+                    <label for="item-code"> Item Code</label>
+                    <input type="text" id="item-code" name="item-code" placeholder="Item code">
+                </div>
+
+                <div class="ani-form-inside">
+                    <label for="item-name">Item Name</label>
+                    <input type="text" id="item-name" name="item-name" placeholder="Auto Generate">
+                </div>
+
+                <div class="ani-form-inside">
+                    <label for="item-qty"> Quantity Orderd</label>
+                    <input type="text" id="item-qty" name="quantity" placeholder="Enter quantity of item available">
+                </div>
+
+                <div class="ani-form-inside">
+                    <label for="item-price"> Unit Price </label>
+                    <input type="text" id="item-price" name="price" placeholder="Auto generate">
+                </div>
+
+                <div class="ani-form-inside">
+                    <label for="itm-total-price"> Total Price</label>
+                    <input type="text" id="itm-total-price" name="total-price" placeholder="Auto generate">
+                </div>
+            </form>
+
+            <div class="add-to-cart-btn-container">
+                <button type="submit">Add to cart <i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+        </div>
+        <div class="view-orders">
+            <table class="order-data">
+                <thead class="table-head">
+                <tr class="th-row">
+                    <th>Item Code</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                    <th>Action </th>
+                </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="tb-row-even">
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr class="tb-row-odd">
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr class="tb-row-even">
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr class="tb-row-odd">
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr class="tb-row-even">
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td>Hirusha</td>
+                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="show-summary">
+            <div class="total-bill">
+                <h3>Total</h3>
+                <h1>LKR.13900</h1>
+            </div>
+
+            <div class="bill-discount">
+                <h3>Discount</h3>
+                <h1>10%</h1>
+            </div>
+
+            <div class="bill-sub-total">
+                <h3>Sub total</h3>
+                <h1>LKR.12000</h1>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
