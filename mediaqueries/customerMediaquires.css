@@ -1,0 +1,26 @@
+@media all and (max-width: 600px){
+    .option-row i{
+        font-size: 30px;
+    }
+    button.primary{
+        scale: .9;
+        padding: 0;
+    }
+    .cus-add-button{
+        padding-right: .2rem;
+    }
+}
+
+
+@media all and (max-width: 400px){
+    .option-row i{
+        font-size: 25px;
+    }
+    button.primary{
+        scale: .8;
+        padding: 0;
+    }
+    .cus-add-button{
+        padding-right: 0;
+    }
+}

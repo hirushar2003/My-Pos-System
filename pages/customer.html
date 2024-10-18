@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="/styles/stylesCustomer.css">
+    <link rel="stylesheet" href="/mediaqueries/customerMediaquires.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<section id="customer">
+    <div class="decor">
+
+    </div>
+
+    <div class="customer-manage">
+        <div class="option-row">
+            <div class="search">
+                <input type="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="add-row">
+            <div class="cus-num">
+                <h3>No. of Customers : 25</h3>
+            </div>
+
+            <div class="cus-add-button">
+                <button type="button" class="primary" onclick="window.dialog.showModal();">Add Customer
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <dialog id="dialog">
+                    <div class="dialog-top">
+                        <h3>Customer</h3>
+                        <button onclick="window.dialog.close();" aria-label="cose" class="x">❌</button>
+                    </div>
+                    <form class="cus-manage-form">
+                        <div class="cus-manage-form-inside">
+                            <label for="cus-id"> Customer ID</label>
+                            <input type="text" id="cus-id" name="cus-id" placeholder="Customer ID">
+                        </div>
+
+                        <div class="cus-manage-form-inside">
+                            <label for="cus-name">Name</label>
+                            <input type="text" id="cus-name" name="cus-name" placeholder="Enter customer Name">
+                        </div>
+
+                        <div class="cus-manage-form-inside">
+                            <label for="cus-con"> Contact </label>
+                            <input type="text" id="cus-con" name="contact" placeholder="Enter customer contact">
+                        </div>
+
+                        <div class="cus-manage-form-inside">
+                            <label for="cus-add"> Address</label>
+                            <input type="text" id="cus-add" name="address" placeholder="Enter customer address">
+                        </div>
+                    </form>
+                    <div class="button-container">
+                        <button class="cus-add">
+                            Add Customer
+                        </button>
+                        <button class="cus-update">
+                            Update Customer
+                        </button>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+<!--        <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>-->
+
+
+
+    </div>
+
+    <div class="customer-view">
+        <table class="cus-data">
+            <thead class="table-head">
+                <tr class="th-row">
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr class="tb-row-even">
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                </tr>
+                <tr class="tb-row-odd">
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                </tr>
+                <tr class="tb-row-even">
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                </tr>
+                <tr class="tb-row-odd">
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                </tr>
+                <tr class="tb-row-even">
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                    <td>Hirusha</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
