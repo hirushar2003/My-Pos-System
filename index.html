@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hirusha Pos</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <h2>Hirusha Pos</h2>
+    </div>
+
+    <div class="page-navigation">
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="#customer">Customer</a></li>
+                <li><a href="#item">Item</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="customer">
+    <div class="cus-topic">
+        <h3>Customer Manage</h3>
+    </div>
+    <div class="cus-manage">
+        <div class="cus-manage-form">
+            <form class="customer-form">
+                <div class="cus-manage-form-inside">
+                    <label for="cus-id"> Customer ID</label>
+                    <input type="text" id="cus-id" name="cus-id" placeholder="Customer ID">
+                </div>
+
+                <div class="cus-manage-form-inside">
+                    <label for="cus-name">Name</label>
+                    <input type="text" id="cus-name" name="cus-name" placeholder="Enter customer Name">
+                </div>
+
+                <div class="cus-manage-form-inside">
+                    <label for="cus-con"> Contact </label>
+                    <input type="text" id="cus-con" name="contact" placeholder="Enter customer contact">
+                </div>
+
+                <div class="cus-manage-form-inside">
+                    <label for="cus-add"> Address</label>
+                    <input type="text" id="cus-add" name="address" placeholder="Enter customer address">
+                </div>
+            </form>
+
+            <div class="cus-button-options">
+                <button class="customer-save">Save</button>
+                <button class="customer-update">Update</button>
+                <button class="customer-delete">Delete</button>
+                <button class="customer-clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="cus-search">
+            <div class="table-topic">
+                <h3>Customer Table</h3>
+            </div>
+
+            <div class="cus-search-in">
+                <input id="search-cus" name="customer-search">
+
+                <button class="customer-search-button">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cus-view">
+        <table class="cus-data">
+            <thead class="table-head">
+            <tr class="th-row">
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody class="customer-table-body">
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="item">
+    <div class="item-topic">
+        <h3>Item Manage</h3>
+    </div>
+    <div class="item-manage">
+        <div class="item-manage-form">
+            <form class="item-form">
+                <div class="item-manage-form-inside">
+                    <label for="item-code"> Item Code</label>
+                    <input type="text" id="item-code" name="item-code" placeholder="Item Code">
+                </div>
+
+                <div class="item-manage-form-inside">
+                    <label for="item-name">Item Name</label>
+                    <input type="text" id="item-name" name="item-name" placeholder="Enter item Name">
+                </div>
+
+                <div class="item-manage-form-inside">
+                    <label for="item-price"> Price </label>
+                    <input type="text" id="item-price" name="item-price" placeholder="Enter item price">
+                </div>
+
+                <div class="item-manage-form-inside">
+                    <label for="item-qty"> Quantity</label>
+                    <input type="text" id="item-qty" name="item-qty" placeholder="Enter item-qty">
+                </div>
+            </form>
+
+            <div class="item-button-options">
+                <button class="item-save">Save</button>
+                <button class="item-update">Update</button>
+                <button class="item-delete">Delete</button>
+                <button class="item-clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="item-search">
+            <div class="table-topic">
+                <h3>Item Table</h3>
+            </div>
+
+            <div class="item-search-in">
+                <input id="search-item" name="item-search">
+
+                <button class="item-search-button">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-view">
+        <table class="item-data">
+            <thead class="table-head">
+            <tr class="th-row">
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+            </tr>
+            </thead>
+            <tbody class="item-table-body">
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            <tr>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="order">
+    <h2>Orders</h2>
+    <div class="order-set">
+        <div class="order-set-inside">
+            <label >Order ID</label>
+            <input type="text" id="order-item-code" name="item-code" placeholder="Item Code">
+        </div>
+        <div class="order-set-inside">
+            <label>Customer ID</label>
+            <input list="browsers" id="browser" name="browser" placeholder="Select a browser">
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+        </div>
+        <div class="order-set-inside">
+            <label>Customer Name</label>
+            <input type="text" id="order-customer-name" name="order-customer-name" placeholder="Generate Automatically">
+        </div>
+        <div class="order-set-inside">
+            <label>Date</label>
+        </div>
+    </div>
+
+    <div class="item-set">
+        <div class="item-set-upper">
+            <div class="item-set-upper-inside">
+                <label >Item Code</label>
+                <input list="itemCodeList" id="itemCodeDataList" name="itemCodeList" placeholder="Select an item">
+
+                <datalist id="itemCodeList">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+            </div>
+            <div class="item-set-upper-inside">
+                <label>Item Name</label>
+                <input type="text" id="order-item-name" name="order-item-name" placeholder="Generate Automatically">
+            </div>
+            <div class="item-set-upper-inside">
+                <label>Unit Price</label>
+                <input type="text" id="order-item-price" name="order-item-price" placeholder="Generate Automatically">
+            </div>
+            <div class="item-set-upper-inside">
+                <label>Quantity on hand</label>
+                <input type="text" id="order-item-qty" name="order-item-qty" placeholder="Generate Automatically">
+            </div>
+        </div>
+        <div class="item-set-lower">
+            <label>Order Quantity</label>
+            <input type="text" id="order-item-qty-need" name="order-item-qty-need" placeholder="Enter the quantity needed">
+            <button>Add to list</button>
+        </div>
+    </div>
+
+    <div class="order-view">
+        <table class="order-data">
+            <thead class="table-head">
+            <tr class="th-row">
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody class="order-table-body">
+            <tr>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td>Hirusha</td>
+                <td><button>Delete</button></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="order-final">
+            <div class="order-final-inside">
+                <label>Total</label>
+                <input type="text" id="total-bill" placeholder="Generate Auto">
+            </div>
+            <div class="order-final-inside">
+                <label>Discount</label>
+                <input type="text" id="discount-bill" placeholder="Input discount amount">
+            </div>
+            <div class="order-final-inside">
+                <label>Sub Total</label>
+                <input type="text" id="sub-total-bill" placeholder="Generate Auto">
+            </div>
+            <div class="order-final-inside">
+                <label>Cash</label>
+                <input type="text" id="cash-amount" placeholder="Input cash gain">
+            </div>
+            <div class="order-final-inside">
+                <label>Balance</label>
+                <input type="text" id="balance-bill" placeholder="Generate Auto">
+            </div>
+
+            <div class="order-final-buttons">
+                <button>Place Order</button>
+                <button>New</button>
+                <button>Clear</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="module" src="controller/customerController.js"></script>
+<script type="module" src="controller/itemController.js"></script>
+<script type="module" src="controller/orderController.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
