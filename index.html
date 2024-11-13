@@ -219,42 +219,31 @@
     <div class="order-set">
         <div class="order-set-inside">
             <label >Order ID</label>
-            <input type="text" id="order-item-code" name="item-code" placeholder="Item Code">
+            <input type="text" id="order-id" name="order-id" placeholder="Order ID">
         </div>
         <div class="order-set-inside">
             <label>Customer ID</label>
-            <input list="browsers" id="browser" name="browser" placeholder="Select a browser">
-
-            <datalist id="browsers">
-                <option value="Chrome">
-                <option value="Firefox">
-                <option value="Safari">
-                <option value="Edge">
-                <option value="Opera">
-            </datalist>
+            <select id="customerIdList">
+                <option value="" disabled selected>Select a customer</option>
+            </select>
         </div>
         <div class="order-set-inside">
             <label>Customer Name</label>
             <input type="text" id="order-customer-name" name="order-customer-name" placeholder="Generate Automatically">
         </div>
         <div class="order-set-inside">
-            <label>Date</label>
+            <label id="order-date">Date</label>
         </div>
     </div>
 
     <div class="item-set">
         <div class="item-set-upper">
             <div class="item-set-upper-inside">
-                <label >Item Code</label>
-                <input list="itemCodeList" id="itemCodeDataList" name="itemCodeList" placeholder="Select an item">
-
-                <datalist id="itemCodeList">
-                    <option value="Chrome">
-                    <option value="Firefox">
-                    <option value="Safari">
-                    <option value="Edge">
-                    <option value="Opera">
-                </datalist>
+                <div class="item-set-upper-inside">
+                    <select id="itemCodeList">
+                        <option value="" disabled selected>Select an item</option>
+                    </select>
+                </div>
             </div>
             <div class="item-set-upper-inside">
                 <label>Item Name</label>
@@ -272,7 +261,7 @@
         <div class="item-set-lower">
             <label>Order Quantity</label>
             <input type="text" id="order-item-qty-need" name="order-item-qty-need" placeholder="Enter the quantity needed">
-            <button>Add to list</button>
+            <button id="btn-add-to-list">Add to list</button>
         </div>
     </div>
 
@@ -290,44 +279,44 @@
             </thead>
             <tbody class="order-table-body">
             <tr>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td><button>Delete</button></td>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td><button>Delete</button></td>-->
             </tr>
             <tr>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td><button>Delete</button></td>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td><button>Delete</button></td>-->
             </tr>
             <tr>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td><button>Delete</button></td>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td><button>Delete</button></td>-->
             </tr>
             <tr>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td><button>Delete</button></td>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td><button>Delete</button></td>-->
             </tr>
             <tr>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td>Hirusha</td>
-                <td><button>Delete</button></td>
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td>Hirusha</td>-->
+<!--                <td><button>Delete</button></td>-->
             </tr>
             </tbody>
         </table>
@@ -355,9 +344,8 @@
             </div>
 
             <div class="order-final-buttons">
-                <button>Place Order</button>
-                <button>New</button>
-                <button>Clear</button>
+                <button class="btn-place-order">Place Order</button>
+                <button class="btn-clear-all">Clear</button>
             </div>
         </div>
     </div>

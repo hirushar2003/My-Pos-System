@@ -621,3 +621,30 @@ button{
     pointer-events: none;
     cursor: not-allowed;
 }
+
+input[list] {
+    cursor: pointer; /* Show the hand cursor */
+    pointer-events: auto; /* Allow interaction with the dropdown */
+}
+
+datalist {
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+option {
+    cursor: pointer; /* Hand cursor on options */
+}
+
+#customerIdList{
+    width: 200px;
+    height: 50px;
+}
+
+#customerIdList option{
+    z-index: 100;
+}
+
+#itemCodeList{
+    height: 50px;
+    width: 200px;
+}

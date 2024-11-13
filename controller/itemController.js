@@ -17,6 +17,7 @@ $(".item-save").on("click", function () {
         );
         itemArray.push(item);
         loadItemData();
+        setItemCodes();
         setAlert("success", "Inventory successfully saved");
         console.log(item);
         clearInputs();
@@ -165,4 +166,13 @@ function clearInputs(){
 function nextItemId() {
     let nextItemId = itemArray.length + 1;
     return $("#item-code").val(nextItemId);
+}
+
+function setItemCodes() {
+    const itemCodeList = $("#itemCodeList");
+    itemCodeList.empty();
+
+    itemArray.forEach((item) => {
+        itemCodeList.append(`<option value="${item.itemCode}">${item.itemCode}</option>`);
+    });
 }

@@ -19,6 +19,7 @@ $(".customer-save").on(
             customerArray.push(customer);
             setAlert('success', 'customer saved successfully');
             loadCustomerData();
+            setCustomerIds();
             clearInputs();
             nextCustomerId();
         }
@@ -168,4 +169,12 @@ export let loadCustomerData = () => {
         customerBody.append(data);
     });
 };
+
+function setCustomerIds() {
+    const customerIdList = $("#customerIdList");
+    customerIdList.empty();
+    customerArray.forEach((customer) => {
+        customerIdList.append(`<option value="${customer.cusId}">${customer.cusId}</option>`);
+    });
+}
 
