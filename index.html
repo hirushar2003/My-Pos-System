@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Hirusha Pos</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles1.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 
 </head>
 <body>
-<header class="header">
+<header class="header hidden-header">
     <div class="logo">
         <h2>Hirusha Pos</h2>
     </div>
@@ -17,30 +17,52 @@
     <div class="page-navigation">
         <nav class="nav-bar">
             <ul class="nav-links">
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="#customer">Customer</a></li>
-                <li><a href="#item">Item</a></li>
-                <li><a href="#order">Order</a></li>
+                <li><a href="index.html" id="nav-dash">Dashboard</a></li>
+                <li><a href="#customer" id="nav-cus">Customer</a></li>
+                <li><a href="#item" id="nav-item">Item</a></li>
+                <li><a href="#order" id="nav-order">Order</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<section id="#dashboard">
-<!--    <div class="dashboard-main-frame">-->
-<!--        <div class="dash-sub">-->
-<!--            Customers-->
-<!--            <label>No</label>-->
-<!--        </div>-->
-<!--        <div class="dash-sub">-->
-<!--            Items-->
-<!--            <label>No</label>-->
-<!--        </div>-->
-<!--        <div class="dash-sub">-->
-<!--            Orders-->
-<!--            <label>No</label>-->
-<!--        </div>-->
-<!--    </div>-->
+
+<section id="dashboard">
+    <div class="dash-upper">
+        <div class="dash-select">
+            <label>Customers</label>
+            <label class="lCus">XXXXX</label>
+        </div>
+
+        <div class="dash-select">
+            <label>Items</label>
+            <label class="lItem">XXXXX</label>
+        </div>
+
+        <div class="dash-select">
+            <label>Orders</label>
+            <label class="lOrder">XXXXX</label>
+        </div>
+    </div>
+
+    <div class="dash-middle">
+        <label>View Order History</label>
+    </div>
+
+    <div class="dash-lower">
+        <table class="oh-table">
+            <thead class="oh-table-head">
+            <tr class="oh-th-row">
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Total Bill</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody class="oh-table-body">
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <section id="customer">
@@ -105,9 +127,11 @@
             </tr>
             </thead>
             <tbody class="customer-table-body">
+
             </tbody>
         </table>
     </div>
+
 </section>
 
 <section id="item">
@@ -172,43 +196,15 @@
             </tr>
             </thead>
             <tbody class="item-table-body">
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-            </tr>
             </tbody>
         </table>
     </div>
 </section>
 
 <section id="order">
-    <h2>Orders</h2>
+    <div class="order-topic">
+        <h3>Orders</h3>
+    </div>
     <div class="order-set">
         <div class="order-set-inside">
             <label >Order ID</label>
@@ -233,6 +229,7 @@
         <div class="item-set-upper">
             <div class="item-set-upper-inside">
                 <div class="item-set-upper-inside">
+                    <label>Item Code</label>
                     <select id="itemCodeList">
                         <option value="" disabled selected>Select an item</option>
                     </select>
@@ -257,63 +254,23 @@
             <button id="btn-add-to-list">Add to list</button>
         </div>
     </div>
-
-    <div class="order-view">
-        <table class="order-data">
-            <thead class="table-head">
-            <tr class="th-row">
-                <th>Item Code</th>
-                <th>Item Name</th>
-                <th>Unit Price</th>
-                <th>Quantity</th>
-                <th>Total Price</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody class="order-table-body">
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td><button>Delete</button></td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td><button>Delete</button></td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td><button>Delete</button></td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td><button>Delete</button></td>-->
-            </tr>
-            <tr>
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td>Hirusha</td>-->
-<!--                <td><button>Delete</button></td>-->
-            </tr>
-            </tbody>
-        </table>
-
+    <div class="order-final-main">
+        <div class="order-view">
+            <table class="order-data">
+                <thead class="table-head">
+                <tr class="th-row">
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody class="order-table-body">
+                </tbody>
+            </table>
+        </div>
         <div class="order-final">
             <div class="order-final-inside">
                 <label>Total</label>
@@ -342,8 +299,9 @@
             </div>
         </div>
     </div>
-</section>
 
+</section>
+<script type="module" src="controller/dashBoardController.js"></script>
 <script type="module" src="controller/customerController.js"></script>
 <script type="module" src="controller/itemController.js"></script>
 <script type="module" src="controller/orderController.js"></script>
