@@ -10,7 +10,7 @@ body{
     padding: 0;
     margin: 0;
     background: #1D1E1E;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 input{
@@ -712,12 +712,6 @@ button:hover{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-}
-
-.item-button-options button{
-    height: 35px;
-    width: 150px;
-    border-radius: 20px;
 }
 
 .item-manage-form-inside input {
